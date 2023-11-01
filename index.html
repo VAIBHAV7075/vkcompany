@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> 
+</head>
+<body>
+  <!-- nav-bar-section -->
+  <nav class="navbar navbar-expand-lg p-3 mb-2 bg-black text-white">
+      <div class="container-fluid">
+        <a style="text-shadow: 3px 1px 4px aqua;" class="navbar-brand font-weight-bold text-white" href="#">VK WEB-Devloper</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon font-weight-bold text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu bg-black text-white border border-white font-weight-bold">
+                  <li><a class="dropdown-item text-white font-weight-bold" href="company.html">Company</a></li>
+                  <li><a class="dropdown-item text-white font-weight-bold" href="history.html">History</a></li>
+                  <li><a class="dropdown-item text-white font-weight-bold" href="team.html">Team</a></li>
+                  <li><hr class="dropdown-divider border border-white"></li>
+                  <li><a class="dropdown-item text-white font-weight-bold" href="help.html">Help</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-white" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-white">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-white">Carrier</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold text-white">Contact US</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- images lidebar -->
+  <div class="slider">
+    <a id="prevBtn"><i class="fa-solid fa-angle-left" style="color: #c4c4c4;"></i></a>
+    <div class="slide">
+      <img src="https://www.tekprosol.com/img/services-slider.svg" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1695984008899_icccricketwcoctdesktop.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1696064777807_web.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1693899252341_inoxdesktop.avif" alt="Image 3">
+    </div>
+    <a id="nextBtn"><i class="fa-solid fa-angle-right" style="color: #cccccc;"></i></a>
+  </div>
+
+  <!-- Our-services -->
+  <div class="services">
+    <div class="title">
+      <h1 style="font-weight: bold;">Our Services</h1>
+    </div>
+    <div class="ser-logo">
+      <div class="logo">
+        <p>Management</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU0IOPuRoT92Zc5dSoR5w9Ybjy9tfLQ05lO_FIPX_i6NO8l_YGU2n-kaiViz-WJPvDv0&usqp=CAU" alt="">
+      </div>
+      <div class="logo">
+        <p>UI and UX Design</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8klpKm0BMovJX02vjHuryX0GvPe8Np4VvxFz_X1tv2L27WT1VnOBlvoIQv3G3_odJ_o&usqp=CAU" alt="">
+      </div>
+      <div class="logo">
+        <p>Web Devlopment</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2tYmud-BuKrIljEU3DrTnZBATSBuG7HXMSy-l1DQ_jzMz5LQQaSlXXoyA-3LZINmI2s&usqp=CAU" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- welcome to vk devloper -->
+  <div class="welcome">
+    <p style="font-weight: bold; font-size:larger">Welcome To VK_Devloper</p>
+    <input class="wel-btn" type="button" value="Request Demo" onclick="enquiry()"> 
+  </div>
+
+  <!-- enquiry form -->
+  <div class="container">
+    <form onsubmit="send()" reset(); return false;>
+      <h3 style="font-weight: bold;">GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email id" required>
+      <input type="text" id="phone" placeholder="Phone No" required>
+      <textarea id="message" rows="4" placeholder="how can we help you"></textarea>
+      <!-- <button type="button">Send</button> -->
+      <input class="button" type="button" value="Send" onclick="send()"> 
+    </form>
+  </div>
+
+  <!-- About us -->
+  <div class="about">
+    <div class="image">
+      <img src="assets/images/lapy.jpg" alt="">
+    </div>
+    <div class="content">
+      <h1>We would love to tell you about us!</h1>
+      <p>We are a team of passionately dedicated professionals who came together in the year 2020 and formed SoftAt.</p>
+      <ul>
+        <li>
+          <p>In a time when the entire world is fighting the global epidemic and businesses are striving to survive, we can help your business sail smoothly by providing efficient and cost-effective SAP Services. We can help you gain momentum in this digital world.</p>
+        </li>
+        <li>
+          <p>We can deliver quality-oriented and time-driven SAP functional and technical consulting to different business horizons such as Information Technology, Manufacturing, Construction, Media & Hospitality, Financial Services, and many others.</p>
+        </li>
+        <li>
+          <p>From SAP implementation to SAP migration, get everything that you need in one place.</p>
+        </li>
+        <li>
+          <p>If you want to know how we can add value to your business, get in touch with our experts today!</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- contact us -->
+  <div class="contact">
+    <div class="content1">
+      <div class="first">
+        <p>“All human interactions are opportunities either to learn or to teach.”</p>
+      </div>
+      <div class="second">
+        <ul>
+          <li >
+            <a style="color: red; font-weight: bold; cursor:pointer" onclick="enquiry()">Connect with Us</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-forward-fill" style="font-style: normal; font-weight: bold;">+91 &nbsp; 9067447075</i>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill" style="font-style: normal;">vaibhavkhatal155@gmail.com</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- vision -->
+  <div class="about">
+    <div class="content">
+      <h3 style="font-weight: bolder;">Vision</h3>
+      <ul>
+        <li>
+          <p>We want to be the most admired company by our Customers, Employees, and Partners.</p>
+        </li>
+        <li>
+          <p>We have started with a vision to bring about a remarkable change in the market.</p>
+        </li>
+        <li>
+          <p>Providing innovative solutions with the use of technology.</p>
+        </li>
+      </ul>
+      <h3 style="font-weight: bolder;">Mission</h3>
+      <ul>
+        <li>
+          <p>Enabling technology that helps our customers build a global, secure and scalable enterprise.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="assets/images/lapy1.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- why me -->
+  <div class="about2">
+    <div class="hero">
+      <div class="content2">
+      <h1>Why VK WEB-Devloper ?</h1>
+      <ul>
+        <li>
+          <p>We are problem solvers with a passion for excellence.</p>
+        </li>
+        <li>
+          <p>We are intellectually curious and highly collaborative.</p>
+        </li>
+        <li>
+          <p>However, against the backdrop of a challenging global economy, we endeavor to adopt new generation technologies and processes in our unique delivery model.</p>
+        </li>
+        <li>
+          <p>SoftAt has successfully carved a niche for itself by consolidating its approach to SAP & Oracle Support and Services through sustainable value addition to organizations.</p>
+        </li>
+        <li>
+          <p>Software technologists, various domain-centric SAP & Oracle Consultants/ developers, IT Innovators, and reputed academicians with international exposure work in tandem in our operation centers in India.</p>
+        </li>
+        <li>
+          <p>We extend our limit to support the organizations to bring about the best in the industry.</p>
+        </li>
+        <li>
+          <p>We have a passion for helping people.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="btn">
+      <input class="learn-more-btn" type="button" value="Learn More" onclick="display()">
+      <i class="fa-solid fa-angle-right" style="color: #fff; margin-left:20px;"></i>
+    </div>
+    </div>
+    
+  </div>
+
+  <!-- industries web serve -->
+  <div class="industries">
+    <h1 style="margin-left:65px; font-weight:bolder">Industries Web Serv</h1>
+    <div class="photo">
+      <img src="assets/images/lapy1.jpg" alt="">
+    </div>
+    <div class="photo">
+      <img src="assets/images/lapy1.jpg" alt="">
+    </div>
+    <div class="photo">
+      <img src="assets/images/lapy1.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-dark text-light p-3">
+    <div class="container1">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 VK WEB-Devloper  – All rights reserved</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p>Powered by WP – Designed with the Customizr theme</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-auto">
+     <div class="social-links">
+      <ul class="socials">
+         <li >
+          <a rel="nofollow noopener noreferrer" class="social-icon icon-facebook-square"  title="Follow us on Facebook-square" aria-label="Follow us on Facebook-square" href="#"  target="_blank" ><i class="fab fa-facebook-square"></i></a>
+         </li> 
+         <li >
+          <a rel="nofollow noopener noreferrer" class="social-icon icon-instagram"  title="Follow us on Instagram" aria-label="Follow us on Instagram" href="https://www.instagram.com/its_vaibhav_khatal/"  target="_blank" ><i class="fab fa-instagram"></i></a>
+         </li> 
+         <li >
+          <a rel="nofollow noopener noreferrer" class="social-icon icon-linkedin"  title="Follow us on Linkedin" aria-label="Follow us on Linkedin" href="#"  target="_blank" ><i class="fab fa-linkedin"></i></a>
+         </li> 
+         <li >
+          <a rel="nofollow noopener noreferrer" class="social-icon icon-mail"  title="contact@softat.co.in" aria-label="contact@softat.co.in" href="#"  target="_blank" ><i class="fas fa-envelope"></i></a>
+         </li> 
+         <li >
+          <a rel="nofollow noopener noreferrer" class="social-icon icon-phone"  title="+91 9067447075" aria-label="+91 9067447075" href="http://+91%209067447075"  target="_blank" ><i class="fas fa-phone"></i></a>
+         </li>
+      </ul>
+    </div>
+  </footer>
+
+  
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="assets/JS/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
